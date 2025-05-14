@@ -1,4 +1,4 @@
-# obsidian-cjk-count
+# CJK Count
 
 A word count Obsidian plugin that only counts Chinese, Japanese and Korean (CJK) characters in the status bar.
 

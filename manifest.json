@@ -1,0 +1,10 @@
+{
+  "id": "cjk-count",
+  "name": "CJK Count",
+  "version": "1.0.0",
+  "minAppVersion": "1.8.10",
+  "description": "A word count plugin that only counts Chinese, Japanese and Korean (CJK) characters.",
+  "author": "vrabe",
+  "authorUrl": "https://vrabe.tw",
+  "isDesktopOnly": true
+}

@@ -9,7 +9,9 @@ export default class CJKCountPlugin extends Plugin {
     this.#statusBarItemEl.setText("0 字");
 
     this.registerEvent(
-      this.app.workspace.on("file-open", () => setTimeout(() => this.#updateCount(), 100))
+      this.app.workspace.on("file-open", () => {
+        window.setTimeout(() => this.#updateCount(), 100);
+      })
     );
 
     this.registerEvent(this.app.workspace.on("editor-change", () => this.#updateCount()));

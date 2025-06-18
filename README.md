@@ -4,7 +4,7 @@ A word count Obsidian plugin that only counts Chinese, Japanese and Korean (CJK)
 
 ## Limitation
 
-No translation currently. It only displays Chinese.
+We only have English and Chinese UI now in `src/i18n.js` with a very simple localization framework(?).
 
 ## Acknowledgments
 

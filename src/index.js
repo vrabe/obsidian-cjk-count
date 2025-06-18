@@ -1,12 +1,15 @@
-import { MarkdownView, Plugin } from "obsidian";
+import { MarkdownView, Plugin, getLanguage } from "obsidian";
 import { lettersRegExp } from "cjk-regex-compact";
+import translation from "./i18n";
+
+const translatedText = translation[getLanguage()] ?? translation["en"];
 
 export default class CJKCountPlugin extends Plugin {
   #statusBarItemEl;
 
   async onload() {
     this.#statusBarItemEl = this.addStatusBarItem();
-    this.#statusBarItemEl.setText("0 字");
+    this.#statusBarItemEl.setText(`0 ${translatedText.characters}`);
 
     this.registerEvent(
       this.app.workspace.on("file-open", () => {
@@ -29,6 +32,6 @@ export default class CJKCountPlugin extends Plugin {
       characterCount = characters ? characters.length : 0;
     }
 
-    this.#statusBarItemEl.setText(`${characterCount} 字`);
+    this.#statusBarItemEl.setText(`${characterCount} ${translatedText.characters}`);
   }
 }

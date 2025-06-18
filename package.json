@@ -1,6 +1,6 @@
 {
   "name": "obsidian-cjk-count",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A word count Obsidian plugin that only counts Chinese, Japanese and Korean (CJK) characters.",
   "main": "main.js",
   "type": "module",

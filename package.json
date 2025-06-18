@@ -4,6 +4,7 @@
   "description": "A word count Obsidian plugin that only counts Chinese, Japanese and Korean (CJK) characters.",
   "main": "main.js",
   "type": "module",
+  "private": true,
   "scripts": {
     "dev": "node esbuild.config.js",
     "build": "node esbuild.config.js production",

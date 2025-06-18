@@ -1,5 +1,5 @@
 import { MarkdownView, Plugin } from "obsidian";
-import CJKCharacters from "./cjk-characters";
+import { lettersRegExp } from "cjk-regex-compact";
 
 export default class CJKCountPlugin extends Plugin {
   #statusBarItemEl;
@@ -23,7 +23,7 @@ export default class CJKCountPlugin extends Plugin {
 
     if (activeView) {
       const content = activeView.editor.getValue();
-      const characters = content.match(new RegExp(CJKCharacters, "g"));
+      const characters = content.match(lettersRegExp("g"));
       characterCount = characters ? characters.length : 0;
     }
 

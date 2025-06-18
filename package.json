@@ -8,14 +8,17 @@
     "dev": "node esbuild.config.js",
     "build": "node esbuild.config.js production",
     "version": "node version-bump.js && git add manifest.json versions.json",
-    "generate": "node src/scripts/generate-cjk-characters.js",
     "format": "prettier -w --cache ."
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "vrabe",
+    "email": "git@vrabe.tw",
+    "url": "https://github.com/vrabe"
+  },
   "license": "MIT",
   "devDependencies": {
-    "cjk-regex": "^3.3.0",
+    "cjk-regex-compact": "^0.1.0",
     "esbuild": "0.17.3",
     "obsidian": "^1.8.7",
     "prettier": "^3.5.3"

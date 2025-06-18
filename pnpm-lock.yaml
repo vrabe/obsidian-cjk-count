@@ -8,9 +8,9 @@ importers:
 
   .:
     devDependencies:
-      cjk-regex:
-        specifier: ^3.3.0
-        version: 3.3.0
+      cjk-regex-compact:
+        specifier: ^0.1.0
+        version: 0.1.0
       esbuild:
         specifier: 0.17.3
         version: 0.17.3
@@ -173,9 +173,8 @@ packages:
   '@types/tern@0.23.9':
     resolution: {integrity: sha512-ypzHFE/wBzh+BlH6rrBgS5I/Z7RD21pGhZ2rltb/+ZrVM1awdZwjx7hE5XfuYgHWk9uvV5HLZN3SloevCAp3Bw==}
 
-  cjk-regex@3.3.0:
-    resolution: {integrity: sha512-o9QeA4DIiljRGO3mXzkQXBttzE6XRGZG99V9F8uqrdqKo5RHTFe8w+pk1aOMB/wxQ7qQ8J7WoTagabTabPgl8A==}
-    engines: {node: '>=16'}
+  cjk-regex-compact@0.1.0:
+    resolution: {integrity: sha512-ATnk7Qu9aulwZ942ObzRn3q4Chb91TwjKTA9ACwPUvlKFw7lkbYIGRe9t/iA32eJv3DNVErBF7GOKAUoa3bzmw==}
 
   esbuild@0.17.3:
     resolution: {integrity: sha512-9n3AsBRe6sIyOc6kmoXg2ypCLgf3eZSraWFRpnkto+svt8cZNuKTkb1bhQcitBcvIqjNiK7K0J3KPmwGSfkA8g==}
@@ -196,16 +195,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  regexp-util@2.0.3:
-    resolution: {integrity: sha512-GP6h9OgJmhAZpb3dbNbXTfRWVnGcoMhWRZv/HxgM4/qCVqs1P9ukQdYxaUhjWBSAs9oJ/uPXUUvGT1VMe0Bs0Q==}
-    engines: {node: '>=16'}
-
   style-mod@4.1.2:
     resolution: {integrity: sha512-wnD1HyVqpJUI2+eKZ+eo1UwghftP6yuFheBqqe+bWCotBjC2K1YnteJILRMs3SM4V/0dLEW1SC27MWP5y+mwmw==}
-
-  unicode-regex@4.1.2:
-    resolution: {integrity: sha512-30Y3tQ8OUxceQjsEJHzNh20lLYZX6ZwQyUOHBUdN1UPKQWH3AvH20aUADWa1gEz2lQPTSQ/l2ZqdM4FjFNMJsQ==}
-    engines: {node: '>=16'}
 
   w3c-keyname@2.2.8:
     resolution: {integrity: sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==}
@@ -300,10 +291,7 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.7
 
-  cjk-regex@3.3.0:
-    dependencies:
-      regexp-util: 2.0.3
-      unicode-regex: 4.1.2
+  cjk-regex-compact@0.1.0: {}
 
   esbuild@0.17.3:
     optionalDependencies:
@@ -341,12 +329,6 @@ snapshots:
 
   prettier@3.5.3: {}
 
-  regexp-util@2.0.3: {}
-
   style-mod@4.1.2: {}
-
-  unicode-regex@4.1.2:
-    dependencies:
-      regexp-util: 2.0.3
 
   w3c-keyname@2.2.8: {}
